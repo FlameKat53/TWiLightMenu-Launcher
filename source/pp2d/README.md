@@ -10,6 +10,6 @@ pp2d is licensed under the MIT License.
 
 * depth parameter (Ryuzaki-MrL)
 * standalone pp2d_free_texture (LiquidFenrir)
-* 3d support (Robz8)
+* 3d support (RocketRobz)
 * load png from memory (ErmanSayin)
 * BMP support (blujay)
