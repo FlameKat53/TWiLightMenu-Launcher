@@ -27,9 +27,9 @@ endif
 # Cersion number
 #---------------------------------------------------------------------------------
 
-VERSION_MAJOR := 2
-VERSION_MINOR := 1
-VERSION_MICRO := 2
+VERSION_MAJOR := 3
+VERSION_MINOR := 0
+VERSION_MICRO := 0
 #---------------------------------------------------------------------------------
 # TARGET is the name of the output
 # BUILD is the directory where object files & intermediate files will be placed
@@ -50,7 +50,7 @@ VERSION_MICRO := 2
 #---------------------------------------------------------------------------------
 TARGET		:=	TWiLight_Menu++_Launcher
 BUILD		:=	build
-SOURCES		:=	source source/pp2d
+SOURCES		:=	source source/pp2d source/json
 DATA		:=	data
 INCLUDES	:=	include
 ROMFS		:=	romfs
@@ -192,7 +192,7 @@ $(OUTPUT).elf	:	$(OFILES)
 $(OUTPUT).cia	:	$(OUTPUT).elf $(OUTPUT).smdh
 	$(BANNERTOOL) makebanner -i "../app/banner.png" -a "../app/BannerAudio.wav" -o "../app/banner.bin"
 
-	$(BANNERTOOL) makesmdh -i "../app/icon.png" -s "$(TARGET)" -l "$(TARGET)" -p "$(APP_AUTHOR)" -o "../app/icon.bin"
+	$(BANNERTOOL) makesmdh -i "../app/icon.png" -s "TWiLight Menu++ Launcher" -l "TWiLight Menu++ Launcher" -p "$(APP_AUTHOR)" -o "../app/icon.bin"
 
 	$(MAKEROM) -f cia -target t -exefslogo -o "../TWiLight_Menu++_Launcher.cia" -elf "../TWiLight_Menu++_Launcher.elf" -rsf "../app/build-cia.rsf" -banner "../app/banner.bin" -icon "../app/icon.bin" -logo "../app/logo.bcma.lz" -DAPP_ROMFS="$(TOPDIR)/$(ROMFS)" -major $(VERSION_MAJOR) -minor $(VERSION_MINOR) -micro $(VERSION_MICRO) -DAPP_VERSION_MAJOR="$(VERSION_MAJOR)"
 
