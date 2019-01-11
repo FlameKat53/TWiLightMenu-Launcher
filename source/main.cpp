@@ -137,7 +137,7 @@ void launchDSiMenuPP(void) {
 			memset(param, 0, sizeof(param));
 			memset(hmac, 0, sizeof(hmac));
 
-			APT_PrepareToDoApplicationJump(0, 0x0004801553524C41ULL, MEDIATYPE_NAND);
+			APT_PrepareToDoApplicationJump(0, 0x0004800453524C41ULL, MEDIATYPE_NAND);
 			// Tell APT to trigger the app launch and set the status of this app to exit
 			APT_DoApplicationJump(param, sizeof(param), hmac);
 		}
@@ -578,7 +578,7 @@ int main()
 							memset(param, 0, sizeof(param));
 							memset(hmac, 0, sizeof(hmac));
 
-							APT_PrepareToDoApplicationJump(0, 0x0004800453524C41ULL, MEDIATYPE_NAND);
+							APT_PrepareToDoApplicationJump(0, 0x00048015534C524EULL, MEDIATYPE_NAND);
 							// Tell APT to trigger the app launch and set the status of this app to exit
 							APT_DoApplicationJump(param, sizeof(param), hmac);
 						}
