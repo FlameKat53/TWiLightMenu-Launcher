@@ -22,7 +22,7 @@ BANNERTOOL 	?= ../bannertool.exe
 
 VERSION_MAJOR := 2
 VERSION_MINOR := 1
-VERSION_MICRO := 2
+VERSION_MICRO := 3
 #---------------------------------------------------------------------------------
 # TARGET is the name of the output
 # BUILD is the directory where object files & intermediate files will be placed
