@@ -27,9 +27,9 @@ endif
 # Cersion number
 #---------------------------------------------------------------------------------
 
-VERSION_MAJOR := 3
-VERSION_MINOR := 0
-VERSION_MICRO := 0
+VERSION_MAJOR := 2
+VERSION_MINOR := 1
+VERSION_MICRO := 4
 #---------------------------------------------------------------------------------
 # TARGET is the name of the output
 # BUILD is the directory where object files & intermediate files will be placed
@@ -48,16 +48,16 @@ VERSION_MICRO := 0
 #     - icon.png
 #     - <libctru folder>/default_icon.png
 #---------------------------------------------------------------------------------
-TARGET		:=	TWiLight_Menu++_Updater
+TARGET		:=	TWiLight_Menu++_Launcher
 BUILD		:=	build
 SOURCES		:=	source source/pp2d source/json
 DATA		:=	data
 INCLUDES	:=	include
 ROMFS		:=	romfs
 APP_AUTHOR	:=	RocketRobz
-APP_DESCRIPTION :=  TWiLight Menu++ Updater
+APP_DESCRIPTION :=      
 ICON		:=	app/icon.png
-BNR_IMAGE	:=  app/banner.png
+BNR_IMAGE	:=      app/banner.png
 BNR_AUDIO	:=	app/BannerAudio.wav
 RSF_FILE	:=	app/build-cia.rsf
 
