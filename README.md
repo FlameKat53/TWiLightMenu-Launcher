@@ -28,3 +28,7 @@ Meorge: made the UV Map for the model
 RocketRobz: Made the TWiLightMenu++ logo, and the original launcher
 
 Vulpes-Vulpeos: Made the DSi's camera
+
+Random Credits
+
+NightYoshi370: gave me the idea to fix the launcher for TWLMenu++ v7.1.0
