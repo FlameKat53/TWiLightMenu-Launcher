@@ -7,12 +7,15 @@ TWiLightMenu-Launcher is an open-source Launcher for TwiLightMenu++
 
 # Credits
 
-RocketRobz - Literally made the launcher and TWiLight Menu++
+Features :
+-The banner is a 3D model
+-The CIA info contains:
+-Spaces instead of underscores (_)
+-Description
+-Creators are RocketRobz, FlameKat53, and Daniel, with some help and bunches of graphics from Vulpes-Vulpeos
 
-Vulpes-Vulpeos - Banner and Icon, bunches of graphics!
-
-FlameKat53 - fixed compatibility for TWL Menu++ v7.1.0 with RocketRobz's Help
-
-Daniel - Made the icon.bin and banner.bin files, helped out a lot
-
-NightYoshi370 - Giving me the idea to fix the launcher
+Credits for the 3D banner:
+Daniel: Created the model, the textures and exported the model to .cgfx
+Meorge: made the UV Map for the model
+RocketRobz: Made the TWiLightMenu++ logo, and the original launcher
+Vulpes-Vulpeos: Made the DSi's camera
