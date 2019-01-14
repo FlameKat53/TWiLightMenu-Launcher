@@ -138,7 +138,7 @@ void launchDSiMenuPP(void) {
 			memset(param, 0, sizeof(param));
 			memset(hmac, 0, sizeof(hmac));
 
-			APT_PrepareToDoApplicationJump(0, 0x0004801553524C41ULL, MEDIATYPE_NAND);
+			APT_PrepareToDoApplicationJump(0, 0x0004800453524C41ULL, MEDIATYPE_NAND);
 			// Tell APT to trigger the app launch and set the status of this app to exit
 			APT_DoApplicationJump(param, sizeof(param), hmac);
 		}
@@ -298,13 +298,13 @@ int main()
 				button_titles2[0] = "Off";
 				break;
 			case 0:
-				button_titles2[0] = "Nintendo DS";
+				button_titles2[0] = "DS";
 				break;
 			case 1:
 				button_titles2[0] = "NDS (4:3)";
 				break;
 			case 2:
-				button_titles2[0] = "Nintendo DSi";
+				button_titles2[0] = "DSi";
 				break;
 			case 3:
 				button_titles2[0] = "NDS (Inverted)";

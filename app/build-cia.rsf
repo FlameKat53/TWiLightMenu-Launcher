@@ -1,6 +1,6 @@
 BasicInfo:
-  Title                   : "DSiMenu++"
-  ProductCode             : "CTR-H-SRLD"
+  Title                   : "TWLMenu++"
+  ProductCode             : "CTR-H-TWLL"
   Logo                    : Homebrew # Nintendo / Licensed / Distributed / iQue / iQueForSystem
 
 RomFs:
@@ -8,7 +8,7 @@ RomFs:
 
 TitleInfo:
   Category                : Application
-  UniqueId                : 0x43955
+  UniqueId                : 0x43777
 
 Option:
   UseOnSD                 : true # true if App is to be installed to SD
