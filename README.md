@@ -8,6 +8,7 @@ TWiLightMenu-Launcher is an open-source Launcher for TwiLightMenu++
 # Credits
 
 Features :
+
 -The banner is a 3D model
 
 -The CIA info contains:
