@@ -24,12 +24,12 @@ BANNERTOOL 	?= bannertool
 endif
 
 #---------------------------------------------------------------------------------
-# Cersion number
+# Version number
 #---------------------------------------------------------------------------------
 
 VERSION_MAJOR := 2
 VERSION_MINOR := 1
-VERSION_MICRO := 4
+VERSION_MICRO := 5
 #---------------------------------------------------------------------------------
 # TARGET is the name of the output
 # BUILD is the directory where object files & intermediate files will be placed
@@ -54,7 +54,7 @@ SOURCES		:=	source source/pp2d source/json
 DATA		:=	data
 INCLUDES	:=	include
 ROMFS		:=	romfs
-APP_AUTHOR	:=	RocketRobz
+APP_AUTHOR	:=	RocketRobz/FlameKat53
 APP_DESCRIPTION :=      Launcher for the new TWLMenu++
 ICON		:=	app/icon.png
 BNR_IMAGE	:=      app/banner.png
