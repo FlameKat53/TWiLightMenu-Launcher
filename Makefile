@@ -29,7 +29,7 @@ endif
 
 VERSION_MAJOR := 2
 VERSION_MINOR := 1
-VERSION_MICRO := 5
+VERSION_MICRO := 6
 #---------------------------------------------------------------------------------
 # TARGET is the name of the output
 # BUILD is the directory where object files & intermediate files will be placed
