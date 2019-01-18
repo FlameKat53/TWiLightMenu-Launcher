@@ -19,7 +19,7 @@ Features :
 
 -Creators are RocketRobz, FlameKat53, and Daniel, with some help and bunches of graphics from Vulpes-Vulpeos
 
-Code Credits :
+# Code Credits:
 
 RocketRobz: Made TWLMenu++ Launcher
 
@@ -31,6 +31,6 @@ Daniel: Created the model, the textures and exported the model to .cgfx
 
 Meorge: made the UV Map for the model
 
-Random Credits
+# Random Credits
 
 NightYoshi370: gave me the idea to fix the launcher for TWLMenu++ v7.1.0
