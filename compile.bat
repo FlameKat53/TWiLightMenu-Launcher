@@ -4,7 +4,7 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
   set "DEL=%%a"
 )
 color 0f
-echo Modified Makefile, compile.bat and clean.bat by : Daniel
+echo Modified Makefile, compile.bat and clean.bat by: Daniel
 
 :detect
 SET "bannertoolFile=Not Found"
