@@ -19,15 +19,17 @@ Features :
 
 -Creators are RocketRobz, FlameKat53, and Daniel, with some help and bunches of graphics from Vulpes-Vulpeos
 
+Code Credits :
+
+RocketRobz: Made TWLMenu++ Launcher
+
+Daniel: Edited compile.bat, Makefile and clean.bat.
+
 Credits for the 3D banner:
 
 Daniel: Created the model, the textures and exported the model to .cgfx
 
 Meorge: made the UV Map for the model
-
-RocketRobz: Made the TWiLightMenu++ logo, and the original launcher
-
-Vulpes-Vulpeos: Made the DSi's camera
 
 Random Credits
 
