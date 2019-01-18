@@ -27,9 +27,11 @@ RocketRobz: Made TWLMenu++ Launcher
 
 FlameKat53: Edited the launcher, with RocketRobz's help, for TWL Menu++ v7.1.0 and up
 
-Daniel: Edited compile.bat, Makefile and clean.bat.
+Daniel: Edited compile.bat and Makefile
 
 devkitPro/WinterMute: Citro3D
+
+Igor Pavlov: 7zip
 
 # 3D banner Credits:
 
