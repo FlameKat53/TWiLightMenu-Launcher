@@ -291,13 +291,13 @@ int main()
 				button_titles2[0] = "Off";
 				break;
 			case 0:
-				button_titles2[0] = "DS";
+				button_titles2[0] = "Nintendo DS";
 				break;
 			case 1:
 				button_titles2[0] = "NDS (4:3)";
 				break;
 			case 2:
-				button_titles2[0] = "DSi";
+				button_titles2[0] = "Nintendo DSi";
 				break;
 			case 3:
 				button_titles2[0] = "NDS (Inverted)";
