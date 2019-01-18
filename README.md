@@ -27,7 +27,7 @@ RocketRobz: Made TWLMenu++ Launcher
 
 Daniel: Edited compile.bat, Makefile and clean.bat.
 
-Credits for the 3D banner:
+# 3D banner Credits:
 
 Daniel: Created the model, the textures and exported the model to .cgfx
 
