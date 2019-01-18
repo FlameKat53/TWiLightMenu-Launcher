@@ -1,5 +1,5 @@
 # TWiLightMenu-Launcher
-TWiLightMenu-Launcher is an open-source Launcher for TwiLightMenu++
+TWiLightMenu-Launcher is an open-source Launcher for TWiLightMenu++
 
 # Links
 [TWiLightMenu++](https://github.com/RocketRobz/TWiLightMenu)
