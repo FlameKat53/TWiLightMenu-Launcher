@@ -25,6 +25,8 @@ Features :
 
 RocketRobz: Made TWLMenu++ Launcher
 
+FlameKat53: with RocketRobz's help, fixed the launcher for TWL Menu++ v7.1.0 and up
+
 Daniel: Edited compile.bat, Makefile and clean.bat.
 
 # 3D banner Credits:
