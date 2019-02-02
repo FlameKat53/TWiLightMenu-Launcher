@@ -39,6 +39,6 @@ Daniel: Created the model, the textures and exported the model to .cgfx
 
 Meorge: made the UV Map for the model
 
-# Random Credits
+# Other
 
 NightYoshi370: gave me the idea to fix the launcher for TWL Menu++ v7.1.0
