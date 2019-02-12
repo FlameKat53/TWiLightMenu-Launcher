@@ -474,8 +474,10 @@ int main()
 				}
 			}
 			pp2d_draw_text(336, 222, 0.50, 0.50, WHITE, launcher_vertext);
-			if(downloadNightlies)	pp2d_draw_text(5, 222, 0.50, 0.50, WHITE, "Nightlies");
-			else	pp2d_draw_text(5, 222, 0.50, 0.50, WHITE, "Releases");
+			if(menuPage==1) {
+				if(downloadNightlies)	pp2d_draw_text(5, 222, 0.50, 0.50, WHITE, "Nightlies");
+				else	pp2d_draw_text(5, 222, 0.50, 0.50, WHITE, "Releases");
+			}
 			if (fadealpha > 0) pp2d_draw_rectangle(0, 0, 400, 240, RGBA8(0, 0, 0, fadealpha)); // Fade in/out effect
 		}
 		pp2d_draw_on(GFX_BOTTOM, GFX_LEFT);
