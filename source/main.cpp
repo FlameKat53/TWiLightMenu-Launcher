@@ -13,6 +13,7 @@
 #include "settings.h"
 #include "dsbootsplash.h"
 #include "language.h"
+#include "download.hpp"
 
 #define CONFIG_3D_SLIDERSTATE (*(float *)0x1FF81080)
 
@@ -20,6 +21,8 @@ static touchPosition touch;
 
 bool dspfirmfound = false;
 static bool musicPlaying = false;
+
+bool downloadNightlies = false;
 
 // Music and sound effects.
 sound *mus_settings = NULL;
@@ -89,6 +92,13 @@ void screenon()
     gspLcdInit();\
     GSPLCD_PowerOnBacklight(GSPLCD_SCREEN_BOTH);\
     gspLcdExit();
+}
+
+void displayBottomMsg(const char* text) {
+	pp2d_begin_draw(GFX_BOTTOM, GFX_LEFT);
+	pp2d_draw_texture(loadingbgtex, 0, 0);
+	pp2d_draw_text(24, 32, 0.5f, 0.5f, BLACK, text);
+	pp2d_end_draw();
 }
 
 // Version numbers.
@@ -168,6 +178,7 @@ int main()
 	pp2d_set_3D(0);
 	
 	pp2d_load_texture_png(homeicontex, "romfs:/graphics/BS_home_icon.png");
+	pp2d_load_texture_png(loadingbgtex, "romfs:/graphics/BS_loading_background.png");
 	pp2d_load_texture_png(subbgtex, "romfs:/graphics/BS_background.png");
 	pp2d_load_texture_png(buttontex, "romfs:/graphics/BS_1_2page_button.png");
 	pp2d_load_texture_png(smallbuttontex, "romfs:/graphics/BS_2page_small_button.png");
@@ -463,6 +474,8 @@ int main()
 				}
 			}
 			pp2d_draw_text(336, 222, 0.50, 0.50, WHITE, launcher_vertext);
+			if(downloadNightlies)	pp2d_draw_text(5, 222, 0.50, 0.50, WHITE, "Nightlies");
+			else	pp2d_draw_text(5, 222, 0.50, 0.50, WHITE, "Releases");
 			if (fadealpha > 0) pp2d_draw_rectangle(0, 0, 400, 240, RGBA8(0, 0, 0, fadealpha)); // Fade in/out effect
 		}
 		pp2d_draw_on(GFX_BOTTOM, GFX_LEFT);
@@ -535,7 +548,7 @@ int main()
 				if (i == 1) {
 					pp2d_draw_text(x_from_width, y, 0.75, 0.75, RGBA8(ledColorDisplay_R, ledColorDisplay_G, ledColorDisplay_B, 255), button_titles2[i]);
 				} else if (i > 1) {
-					pp2d_draw_text(x_from_width, y, 0.75, 0.75, GRAY, button_titles2[i]);
+					pp2d_draw_text(x_from_width, y, 0.75, 0.75, BLACK, button_titles2[i]);
 				} else {
 					pp2d_draw_text(x_from_width, y, 0.75, 0.75, BLACK, button_titles2[i]);
 				}
@@ -618,6 +631,10 @@ int main()
 			setOption = true;
 		}
 
+		if (hDown & KEY_Y) {
+			downloadNightlies = !downloadNightlies;
+		}
+
 		if (menuPage == 0 && (hDown & KEY_TOUCH) && touch.px >= 42 && touch.px <= 275) {
 			if (touch.py >= 52 && touch.py <= 81) {
 				menuSelection = 0;
@@ -681,11 +698,18 @@ int main()
 						}
 						break;
 					case 2:
+						if(dspfirmfound) {
+							sfx_select->stop();
+							sfx_select->play();
+						}
+						updateTWiLight();
+						break;
 					case 3:
 						if(dspfirmfound) {
-							sfx_wrong->stop();
-							sfx_wrong->play();
+							sfx_select->stop();
+							sfx_select->play();
 						}
+						updateBootstrap();
 						break;
 				}
 			}
