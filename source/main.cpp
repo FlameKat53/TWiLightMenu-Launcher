@@ -63,7 +63,7 @@ const char *button_titles2[] = {
 	"Nightly",
 	"Release",
 	"Nightly",
-	"Box art",
+	"Boxart",
 	"Cheats",
 	"Release",
 	"Nightly",
