@@ -35,7 +35,7 @@ Igor Pavlov: 7zip
 
 # 3D banner Credits:
 
-Daniel: Created the model, the textures and exported the model to .cgfx
+Javier107: Created the model, the textures and exported the model to .cgfx
 
 Meorge: made the UV Map for the model
 
