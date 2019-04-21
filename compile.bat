@@ -4,7 +4,7 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
   set "DEL=%%a"
 )
 color 0f
-echo Modified Makefile and compile.bat by: Daniel
+echo Modified Makefile and compile.bat by: Javier107
 
 :detect
 
