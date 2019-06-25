@@ -19,7 +19,7 @@ Features :
 
 -Informative Description
 
--Creators are RocketRobz, FlameKat53, and Daniel, with some help and bunches of graphics from Vulpes-Vulpeos
+-Creators are RocketRobz, FlameKat53, and Javier107, with some help and bunches of graphics from Vulpes-Vulpeos
 
 # Code Credits:
 
